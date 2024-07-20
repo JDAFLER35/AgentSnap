@@ -1,0 +1,35 @@
+# config/config.yaml
+
+agent:
+  name: "AdvancedAIAgent"
+  version: "1.0.0"
+
+memory:
+  max_size: 10000
+  persistence_path: "data/memory.json"
+
+goal_setting:
+  max_goals: 5
+  priority_levels: ["low", "medium", "high", "critical"]
+
+task_execution:
+  max_workers: 10
+  timeout: 300  # seconds
+
+learning:
+  similarity_threshold: 0.8
+  max_knowledge_base_size: 100000
+
+nlp:
+  language: "english"
+  use_gpu: false
+  model: "gpt-2"  # This is just an example, replace with the actual model you're using
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+
+cli:
+  prompt: "AI> "
+  history_file: ".ai_history"
